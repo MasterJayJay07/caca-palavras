@@ -1,0 +1,153 @@
+/* as estilizações a seguir apenas foram feitas para que a tabela vazia apareça no html */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://play-lh.googleusercontent.com/jRKLgsCxR-jPnDBogDgx2Vj2MXy0_jBhhEcGJmmCjSnScUYabjSLEyAvnCmwmiNBXw');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Slackey&display=swap');
+/* VARIÁVEIS */
+:root {
+    --azul-claro: #1058a5;
+    --cinza: #645454;
+    --amarelo:#FFFF00;
+    --vermelho:#FF0000;
+    --verde:#008000;
+    --fonte-pokemon: "Press Start 2P"; 
+    --fonte-principal: 'Lato';
+    --fonte-secundaria: 'Montserrat';
+    --fonte-li:"Slackey";
+}
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEyrh5TFZuUJMttCmBwRaTH2C1H72nxhgzMw&usqp=CAUhttps://play-lh.googleusercontent.com/jRKLgsCxR-jPnDBogDgx2Vj2MXy0_jBhhEcGJmmCjSnScUYabjSLEyAvnCmwmiNBXw');
+    height: 100%;
+    background-size: cover;
+    position: relative;
+}
+header{
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    font-family: var(--fonte-pokemon);
+    margin: 20px;
+    color: var(--cinza);
+}
+section{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+section p{
+    color: var(--cinza);
+    font-family: var(--fonte-pokemon);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+summary {
+    color: var(--cinza);
+    font-family: var(--fonte-pokemon);
+}
+ul, ol {
+    padding-left: 8%;
+    list-style: decimal;
+    padding-right: 8%;
+}
+li{
+    font-size: 15px;
+    margin: 8px;
+    color: var(--cinza);
+    font-family: var(--fonte-li);
+}
+details {
+    text-align: center;
+    max-width: 60%;
+}
+#tabela{
+    display: flex;
+    width: 90%;
+    font-family: var(--fonte-principal);
+    color: var(--azul-claro);
+    margin-left: 5%;
+}
+tr, td {
+    border: 2px solid rgb(42, 67, 138);
+    width: 45px;
+    height: 35px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+table {
+    margin-bottom: 20px;
+}
+.clicada {
+    background-color: #D2691E;
+}
+button {
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: var(--vermelho);
+    color: #fff;
+    margin: 15px;
+}
+button:hover {
+    cursor: pointer;
+}
+.secaoBotoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#divAsh {
+    background-image: url("img/pokmon/ash.gif");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 300px;
+    position: absolute;
+}
+#vitoria {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+}
+#mensagemVitoria {
+    text-align: center;
+    background-color: #00000090;
+    padding: 8px;
+}
+.sumir {
+    display: none;
+}
+
+@media screen and (min-width: 664px) {
+    body{
+        background-image: url('https://i.pinimg.com/originals/76/fd/8f/76fd8fe520e8100b4d5c44043aefc741.jpg');
+    }
+    ul{
+        padding-left: 16%;
+        padding-right: 15%;
+    }
+}
+@media screen and (min-width: 810px){
+    header{
+        font-size: 25px;
+        margin: 30px;
+    }
+    section p{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    ul{
+        padding-right: 23%;
+        padding-left: 23%;
+    }
+    li{
+        margin: 12px;
+    }
+}
